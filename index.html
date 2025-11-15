@@ -1,52 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MM Times Clothing</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>My Clothing Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-<header>
-    <div class="logo">MMTimes Clothing</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="cart.html">Cart</a>
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="logo">MyCloth</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Kids</a>
+      <a href="#">Contact</a>
     </nav>
-</header>
+  </header>
 
-<section class="welcome-card">
-    <h1>Welcome to MM Times Clothing</h1>
-    <p>Your trusted place for custom printing on T-shirts, hoodies, caps & more.</p>
-    <a class="btn" href="products.html">Explore Products</a>
-</section>
-
-<section class="home-products">
-    <h2>Our Products</h2>
-
-    <div class="product-grid">
-
-        <div class="product-card">
-            <img src="https://via.placeholder.com/300x300" alt="T-shirt">
-            <h3>T-Shirts</h3>
-            <a class="btn" href="products.html">View</a>
-        </div>
-
-        <div class="product-card">
-            <img src="https://via.placeholder.com/300x300" alt="Hoodie">
-            <h3>Hoodies</h3>
-            <a class="btn" href="products.html">View</a>
-        </div>
-
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 id="home_title">New Season, New Style</h1>
+      <p id="home_subtitle">Trendy outfits at affordable prices.</p>
+      <button class="hero-btn">Shop Now</button>
     </div>
-</section>
+  </section>
 
-<footer>
-    © 2025 MM Times Clothing. All Rights Reserved.
-</footer>
+  <!-- Categories Section -->
+  <section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category-card">
+        <h3>Men</h3>
+        <p>Shirts, T-shirts, Jeans, and more.</p>
+      </div>
+      <div class="category-card">
+        <h3>Women</h3>
+        <p>Dresses, Tops, Kurtis, and more.</p>
+      </div>
+      <div class="category-card">
+        <h3>Kids</h3>
+        <p>Comfortable outfits for kids.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Featured Products Section -->
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid" id="featured_products">
+      <!-- For now, static products (later will come from Sheets) -->
+      <div class="product-card">
+        <div class="product-img"></div>
+        <h3>Men's Casual Shirt</h3>
+        <p class="price">₹699</p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"></div>
+        <h3>Women's Summer Dress</h3>
+        <p class="price">₹899</p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"></div>
+        <h3>Kids T-Shirt</h3>
+        <p class="price">₹399</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p id="footer_text">© 2025 MyCloth. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Script -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
-
